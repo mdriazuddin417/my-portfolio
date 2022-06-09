@@ -5,7 +5,9 @@ const Skills = () => {
     <div id="skills">
       <div className="text-center pb-5 mb-10">
         <p className="text-md text-secondary font-bold">skills</p>
-        <p className="text-3xl text-primary font-bold "> MY SKILLS</p>
+        <p className="text-center text-3xl text-black font-bold">
+          <span className="text-primary">MY </span>SKILLS
+        </p>
         <p className="text-md text-gray-500 font-semibold">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia

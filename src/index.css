@@ -9,8 +9,98 @@ body {
 }
 .my-shadow-icon {
   background: #ecf0f3;
-  box-shadow: 11px 11px 20px #dfe5ed, -11px -11px 20px #ffffff;
+  /* box-shadow: 11px 11px 20px #dfe5ed, -11px -11px 20px #ffffff; */
+  box-shadow: 5px 5px 10px #dfe5ed, -5px -5px 10px #ffffff;
 }
 .icon {
   @apply shadow-2xl rounded-lg w-[65px] h-[65px] p-[22px] my-shadow-icon hover:bg-primary hover:text-white hover:-translate-y-1 duration-300;
+}
+.my-card:hover p,
+.my-card:hover h2,
+.my-card:hover .icons {
+  color: white;
+}
+.my-card:hover .icons {
+  display: block;
+}
+.my-card:hover .card-info {
+  transform: translateY(-15px);
+}
+
+/* =========================== */
+
+.exampleClass {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.exampleClass span {
+  color: #ff451b;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.exampleClass::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translate(-100%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #ff451b;
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.exampleClass:hover span {
+  color: white;
+}
+
+.exampleClass:hover::before {
+  transform: translate(0, -50%);
+}
+/* ==============Details btn====================== */
+
+.exampleBtn {
+  padding: 12px 24px;
+  background-color: hsl(222, 100%, 95%);
+  color: #ff451b;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.exampleBtn span {
+  z-index: 1;
+  position: relative;
+}
+
+.exampleBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+    transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: #ff451b;
+  opacity: 0;
+}
+
+.exampleBtn:hover span {
+  color: hsl(222, 100%, 95%);
+}
+
+.exampleBtn:hover::before {
+  opacity: 1;
+  transition-duration: 0.85s;
+  transform: translate3d(-50%, -50%, 0) scale3d(1.2, 1.2, 1.2);
 }
