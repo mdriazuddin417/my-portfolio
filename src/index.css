@@ -5,4 +5,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ecf0f3;
+}
+.my-shadow-icon {
+  background: #ecf0f3;
+  box-shadow: 11px 11px 20px #dfe5ed, -11px -11px 20px #ffffff;
+}
+.icon {
+  @apply shadow-2xl rounded-lg w-[65px] h-[65px] p-[22px] my-shadow-icon hover:bg-primary hover:text-white hover:-translate-y-1 duration-300;
 }
