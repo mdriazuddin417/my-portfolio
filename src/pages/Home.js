@@ -29,8 +29,8 @@ const Home = () => {
               adding motion just to spruce things up, but doing it in ways that.
             </p>
             <div className="flex  justify-start items-center gap-5">
-              <button className="btn btn-primary">Hire me</button>
-              <button className="btn btn-outline btn-primary">
+              <button className="btn btn-secondary">Hire me</button>
+              <button className="btn btn-outline btn-secondary">
                 Download Resume
               </button>
             </div>
