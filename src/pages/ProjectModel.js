@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ProjectModel = ({ project }) => {
-  const { name, picture, tools, text } = project;
+const ProjectModel = ({ project, pic }) => {
+  let { name, picture, tools, text } = project;
+  const [newPic, setNewPic] = useState("");
+
   return (
     <div>
       <input type="checkbox" id="my-modal-3" class="modal-toggle" />
@@ -10,11 +12,28 @@ const ProjectModel = ({ project }) => {
           <label
             for="my-modal-3"
             class="btn btn-secondary btn-sm btn-circle absolute right-2 top-2"
+            onClick={() => setNewPic("")}
           >
             ✕
           </label>
           <div className="grid lg:grid-cols-2 gap-10">
-            <img src={picture} alt="" className="w-full h-full" />
+            <div className="space-y-5">
+              <div>
+                <img src={newPic || pic} alt="" className="h-full w-full " />
+              </div>
+              <div className="flex items-center gap-10">
+                {picture?.map((pic) => (
+                  <div>
+                    <img
+                      src={pic}
+                      alt=""
+                      className="h-[100px] w-[100px] cursor-pointer hover:ring ring-1 ring-primary rounded-lg "
+                      onClick={(e) => setNewPic(e.target.src)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
             <div>
               <h3 class="text-2xl font-bold">{name}</h3>
               <p class="py-4 text-gray-500 text-md">{text}</p>

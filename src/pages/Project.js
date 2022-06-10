@@ -4,7 +4,7 @@ const Project = ({ project, handleModel }) => {
   return (
     <div className="space-y-5 p-10 rounded-2xl my-shadow-icon cursor-pointer">
       <img
-        src={project.picture}
+        src={project?.picture[0]}
         alt=""
         className="h-[300px] w-full hover:scale-105 duration-500 "
       />

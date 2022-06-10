@@ -108,3 +108,16 @@ body {
 .modal {
   background-color: #ecf0f3 !important;
 }
+
+/* ===========Blog============ */
+.blog-card:hover {
+  color: #ff451b;
+}
+.blog-icon {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.blog-card:hover .blog-icon {
+  opacity: 1;
+  transform: translateX(10px);
+}

@@ -1,5 +1,5 @@
 import About from "./pages/About";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
@@ -16,7 +16,7 @@ function App() {
       <Skills />
       <Services />
       <Projects />
-      <Blog />
+      <Blogs />
       <Contact />
     </div>
   );

@@ -4,7 +4,8 @@ import ProjectModel from "./ProjectModel";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [item, setItem] = useState({});
+  const [items, setItems] = useState({});
+  const [pic, setPic] = useState("");
   useEffect(() => {
     fetch("projects.json")
       .then((res) => res.json())
@@ -12,7 +13,10 @@ const Projects = () => {
   }, []);
 
   const handleModel = (project) => {
-    setItem(project);
+    if (project?.picture[0]) {
+      setItems(project);
+      setPic(project?.picture[0]);
+    }
   };
   return (
     <div id="projects" className="px-12">
@@ -20,14 +24,14 @@ const Projects = () => {
         VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
       </p>
       <h3 className="text-4xl font-bold text-black text-center">
-        MY PORTFOLIO
+        MY <span className="text-primary">PORTFOLIO</span>
       </h3>
       <div className="grid lg:grid-cols-3 md:grid-cols2 grid-cols-1 gap-10 my-10">
-        {projects.map((project) => (
+        {projects?.map((project) => (
           <Project project={project} handleModel={handleModel}></Project>
         ))}
       </div>
-      <ProjectModel project={item} />
+      <ProjectModel project={items} pic={pic} />
     </div>
   );
 };
