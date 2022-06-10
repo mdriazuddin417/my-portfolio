@@ -1,5 +1,5 @@
 import React from "react";
-
+import photo from "../image/photo3.png";
 const Header = () => {
   const menu = (
     <>
@@ -50,7 +50,9 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <a class=" normal-case text-xl">daisyUI</a>
+        <a class=" normal-case text-xl">
+          <img src={photo} alt="" className="rounded-full w-[70px] h-[70px]" />
+        </a>
       </div>
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal p-0 space-x-2">{menu}</ul>

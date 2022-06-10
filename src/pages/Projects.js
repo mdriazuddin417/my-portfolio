@@ -20,7 +20,7 @@ const Projects = () => {
   };
   return (
     <div id="projects" className="px-12">
-      <p className="text-center font-semibold text-secondary text-md">
+      <p className="text-center tracking-[2px] text-secondary text-md">
         VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
       </p>
       <h3 className="text-4xl font-bold text-black text-center">

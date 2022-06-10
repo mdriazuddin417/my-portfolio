@@ -5,7 +5,7 @@ const ProjectModel = ({ project, pic }) => {
   const [newPic, setNewPic] = useState("");
 
   return (
-    <div>
+    <div className="p-5">
       <input type="checkbox" id="my-modal-3" class="modal-toggle" />
       <div class="modal">
         <div class=" relative bg-white my-shadow-icon m-10 p-10 rounded-xl ">

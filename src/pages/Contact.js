@@ -36,13 +36,19 @@ const Contact = () => {
               find with me
             </p>
             <div className="space-x-6 flex">
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://web.facebook.com/md.riaj.9085790"
+              >
                 <FiFacebook className="icon" />
               </a>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/riaz-uddin-457421214/"
+              >
                 <FiLinkedin className="icon" />
               </a>
-              <a href="#">
+              <a target="_blank" href="https://github.com/mdriazuddin417">
                 <FiGithub className="icon" />
               </a>
             </div>

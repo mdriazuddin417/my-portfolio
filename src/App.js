@@ -1,6 +1,7 @@
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Blogs />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -3,11 +3,13 @@ import { BsArrowRight } from "react-icons/bs";
 const Project = ({ project, handleModel }) => {
   return (
     <div className="space-y-5 p-10 rounded-2xl my-shadow-icon cursor-pointer">
-      <img
-        src={project?.picture[0]}
-        alt=""
-        className="h-[300px] w-full hover:scale-105 duration-500 "
-      />
+      <div className="overflow-hidden h-[300px] rounded-lg w-full ">
+        <img
+          src={project?.picture[0]}
+          alt=""
+          className="w-full h-full hover:scale-110 duration-500 "
+        />
+      </div>
 
       <h3 className="text-2xl font-bold hover:text-primary ">{project.name}</h3>
 
