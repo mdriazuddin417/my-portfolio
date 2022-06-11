@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { FiFacebook, FiLinkedin, FiGithub } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
+import { toast } from "react-toastify";
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_x8f4ydd",
+        "template_dksdug6",
+        e.target,
+        "nU6G5Ts_IqQb3CYjF"
+      )
+      .then((res) => {
+        e.target.reset();
+
+        toast.success("send email success!");
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <div id="contact" className="my-10">
       <p className="text-primary text-md text-center uppercase tracking-[2px]">
@@ -54,62 +73,77 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="my-shadow-icon p-10 rounded-2xl space-y-12">
-          <div className="flex justify-between items-center gap-10">
+        <div className="my-shadow-icon p-10 rounded-2xl ">
+          <form onSubmit={sendEmail} className="space-y-12">
+            <div className="flex justify-between items-center gap-10">
+              <div>
+                <label htmlFor="name" className="text-gray-500">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  className="border w-full p-4 rounded-md focus:outline-primary"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="number" className="text-gray-500">
+                  Phone number
+                </label>
+                <input
+                  type="text"
+                  className="border w-full p-4 rounded-md focus:outline-primary"
+                  id="number"
+                  name="number"
+                  required
+                />
+              </div>
+            </div>
             <div>
-              <label htmlFor="name" className="text-gray-500">
-                Your Name
+              <label htmlFor="email" className="text-gray-500">
+                Email
+              </label>
+              <input
+                type="email"
+                className="border w-full p-4 rounded-md focus:outline-primary"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="subject" className="text-gray-500">
+                Subject
               </label>
               <input
                 type="text"
                 className="border w-full p-4 rounded-md focus:outline-primary"
-                id="name"
+                id="subject"
+                name="subject"
+                required
               />
             </div>
             <div>
-              <label htmlFor="number" className="text-gray-500">
-                Phone number
+              <label htmlFor="message" className="text-gray-500">
+                Your message
               </label>
-              <input
+              <textarea
                 type="text"
-                className="border w-full p-4 rounded-md focus:outline-primary"
-                id="number"
+                className="border w-full p-4 h-[150px] rounded-md focus:outline-primary"
+                id="message"
+                name="message"
+                required
               />
             </div>
-          </div>
-          <div>
-            <label htmlFor="email" className="text-gray-500">
-              Email
-            </label>
-            <input
-              type="email"
-              className="border w-full p-4 rounded-md focus:outline-primary"
-              id="email"
-            />
-          </div>
-          <div>
-            <label htmlFor="subject" className="text-gray-500">
-              Subject
-            </label>
-            <input
-              type="text"
-              className="border w-full p-4 rounded-md focus:outline-primary"
-              id="subject"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="text-gray-500">
-              Your message
-            </label>
-            <textarea
-              type="text"
-              className="border w-full p-4 h-[150px] rounded-md focus:outline-primary"
-              id="message"
-            />
-          </div>
-          <button className="my-shadow-icon p-4 rounded-lg flex text-primary hover:-translate-y-2 duration-300 hover:bg-primary hover:text-white">
-            Send message <BsArrowRight className="text-xl ml-2 " />
-          </button>
+            <button
+              type="submit"
+              className="my-shadow-icon p-4 rounded-lg flex text-primary hover:-translate-y-2 duration-300 hover:bg-primary hover:text-white "
+            >
+              Send message <BsArrowRight className="text-xl ml-2 " />
+            </button>
+          </form>
         </div>
       </div>
     </div>
