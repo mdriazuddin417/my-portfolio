@@ -55,15 +55,21 @@ const ProjectModel = ({ project, pic }) => {
                 </ul>
               </div>
               <div className="flex justify-around items-center gap-5 mt-5">
-                <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
-                  <span>Livesite</span>
-                </p>
-                <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
-                  <span>Github(Client)</span>
-                </p>
-                <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
-                  <span>Github(Server)</span>
-                </p>
+                <a target={"_blank"} href={`${project.livesite}`}>
+                  <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
+                    <span>Livesite</span>
+                  </p>
+                </a>
+                <a target={"_blank"} href={`${project.client}`}>
+                  <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
+                    <span>Github(Client)</span>
+                  </p>
+                </a>
+                <a target={"_blank"} href={`${project.server}`}>
+                  <p className="p-2 rounded-md my-shadow-icon exampleClass cursor-pointer font-bold">
+                    <span>Github(Server)</span>
+                  </p>
+                </a>
               </div>
             </div>
           </div>

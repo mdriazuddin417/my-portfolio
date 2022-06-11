@@ -21,9 +21,11 @@ const Project = ({ project, handleModel }) => {
             </span>
           </div>
         </label>
-        <div className="p-2 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
-          <span>Livesite</span>
-        </div>
+        <a target={"_blank"} href={`${project.livesite}`}>
+          <div className="p-2 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
+            <span>Livesite</span>
+          </div>
+        </a>
       </div>
     </div>
   );

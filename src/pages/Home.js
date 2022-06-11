@@ -32,7 +32,10 @@ const Home = () => {
               <a href="#contact">
                 <button className="btn btn-secondary">Hire me</button>
               </a>
-              <a href="https://doc-00-3s-docs.googleusercontent.com/docs/securesc/u5obelna3pajg2s82r80hlpd4d1qqp3d/kfditm19j3llpatki8jqosn44ki9osc7/1654879425000/03838755268792961291/03838755268792961291/1bGy_EAYOTgwqA1eNMA7bkEf2DnyK_A1F?e=download&ax=ACxEAsYHD4uwjTCL0kiUx9rvtt-P7O7_HER1N7otAa5OhubyHNCUTTvyiimDziK1vB3k9IC%20Show%20in%20folder">
+              <a
+                href="https://drive.google.com/u/0/uc?id=1bGy_EAYOTgwqA1eNMA7bkEf2DnyK_A1F&export=download"
+                download="true"
+              >
                 <button className="btn btn-outline btn-secondary">
                   Download Resume
                 </button>
