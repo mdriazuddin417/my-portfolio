@@ -19,7 +19,7 @@ const MoreProjects = ({ projects }) => {
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
-      slidesPerView={2}
+      slidesPerView={2.5}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,

@@ -1,5 +1,16 @@
 import photo from "../image/photo3.png";
 const Header = () => {
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      document
+        .getElementById("navbar")
+        .classList.add("fixed" ,"shadow", "bg-opacity-90");
+    } else {
+      document
+        .getElementById("navbar")
+        .classList.remove("fixed","shadow", "bg-opacity-90");
+    }
+  });
   const menu = (
     <>
       <li>
@@ -23,7 +34,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-accent fixed top-0 z-50">
+    <div className="navbar bg-accent top-0 z-50" id="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -49,9 +60,9 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <a className=" normal-case text-xl">
+        <div className=" normal-case text-xl">
           <img src={photo} alt="" className="rounded-full w-[65px] h-[65px] ring-2 ring-[#FF451B] ring-offset-2" />
-        </a>
+        </div>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 space-x-2">{menu}</ul>

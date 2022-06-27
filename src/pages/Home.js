@@ -1,9 +1,8 @@
-import React from "react";
-import img from "../image/photo.png";
+import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
 import figma from "../image/figma.png";
 import js from "../image/js.png";
+import img from "../image/photo.png";
 import react from "../image/react.png";
-import { FiFacebook, FiLinkedin, FiGithub } from "react-icons/fi";
 
 const Home = () => {
   return (
@@ -33,7 +32,7 @@ const Home = () => {
                 <button className="btn btn-secondary">Hire me</button>
               </a>
               <a
-                href="https://drive.google.com/u/0/uc?id=1bGy_EAYOTgwqA1eNMA7bkEf2DnyK_A1F&export=download"
+                href="https://drive.google.com/drive/folders/1l6DgQDa1CLclTzVQM8gPpq0CEQ6zRXnc"
                 download="true"
               >
                 <button className="btn btn-outline btn-secondary">
@@ -50,17 +49,17 @@ const Home = () => {
               <div className="space-x-6 flex">
                 <a
                   target="_blank"
-                  href="https://web.facebook.com/md.riaj.9085790"
+                  href="https://web.facebook.com/md.riaj.9085790" rel="noreferrer"
                 >
                   <FiFacebook className="icon" />
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/riaz-uddin-457421214/"
+                  href="https://www.linkedin.com/in/riaz-uddin-457421214/" rel="noreferrer"
                 >
                   <FiLinkedin className="icon" />
                 </a>
-                <a target="_blank" href="https://github.com/mdriazuddin417">
+                <a target="_blank" href="https://github.com/mdriazuddin417" rel="noreferrer">
                   <FiGithub className="icon" />
                 </a>
               </div>

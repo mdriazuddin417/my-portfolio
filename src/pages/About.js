@@ -1,4 +1,3 @@
-import React from "react";
 import photo1 from "../image/photo2.png";
 const About = () => {
   return (
@@ -70,7 +69,7 @@ const About = () => {
             necessary to make your project a success.
           </p>
           <a
-            href="https://drive.google.com/u/0/uc?id=1bGy_EAYOTgwqA1eNMA7bkEf2DnyK_A1F&export=download"
+            href="https://drive.google.com/drive/folders/1l6DgQDa1CLclTzVQM8gPpq0CEQ6zRXnc"
             download="true"
           >
             <button className="btn btn-secondary mt-5">Download Resume</button>
