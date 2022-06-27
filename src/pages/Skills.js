@@ -136,48 +136,48 @@ const Skills = () => {
             <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Mongo DB</h3>
-                <span className="text-secondary">70%</span>
+                <span className="text-secondary">45%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="70"
+                value="45"
                 max="100"
               ></progress>
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Node js(Crud Operation)</h3>
-                <span className="text-secondary">80%</span>
+                <span className="text-secondary">45%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="80"
+                value="45"
                 max="100"
               ></progress>
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Express js (JWT Token)</h3>
-                <span className="text-secondary">80%</span>
+                <span className="text-secondary">40%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="80"
+                value="40"
                 max="100"
               ></progress>
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Firebase authentication</h3>
-                <span className="text-secondary">85%</span>
+                <span className="text-secondary">55%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="85"
+                value="55"
                 max="100"
               ></progress>
             </div>
-            <div>
+            {/* <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Mongoose</h3>
                 <span className="text-secondary">85%</span>
@@ -209,7 +209,7 @@ const Skills = () => {
                 value="85"
                 max="100"
               ></progress>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
