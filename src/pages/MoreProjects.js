@@ -33,7 +33,11 @@ const MoreProjects = ({ projects }) => {
     >
       {projects?.map((project,index) => (
         <SwiperSlide key={index} className="mb-10">
-          <div className="space-y-5  rounded-2xl my-shadow-icon  ">
+          <div
+           data-aos="flip-right"
+           data-aos-easing="linear"
+           data-aos-duration="1300"
+          className="space-y-5  rounded-2xl my-shadow-icon  ">
             <div className="overflow-hidden h-[300px] rounded-lg w-full p-5 ">
               <img
                 src={project?.picture[0]}

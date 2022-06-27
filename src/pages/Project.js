@@ -2,7 +2,11 @@ import { BsArrowRight } from "react-icons/bs";
 const Project = ({ project, handleModel }) => {
 
   return (
-    <div className="space-y-5  rounded-2xl my-shadow-icon ">
+    <div
+    data-aos="flip-right"
+        data-aos-easing="linear"
+        data-aos-duration="1300"
+    className="space-y-5  rounded-2xl my-shadow-icon ">
       <div className="overflow-hidden h-[300px] rounded-lg w-full ">
         <img
           src={project?.picture[0]}

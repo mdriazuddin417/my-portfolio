@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Blog from "./Blog";
 import BlogModel from "./BlogModel";
 
@@ -24,7 +24,11 @@ const Blogs = () => {
       </p>
       <p className="text-4xl text-center font-bold">MY BLOG</p>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols2 grid-cols-1 gap-10 my-5 p-5">
+      <div
+       data-aos="fade-up"
+       data-aos-easing="linear"
+       data-aos-duration="1000"
+       className="grid lg:grid-cols-3 md:grid-cols2 grid-cols-1 gap-10 my-5 p-5">
         {blogs?.map((blog) => (
           <Blog key={blog.id} blog={blog} handleModel={handleModel}></Blog>
         ))}

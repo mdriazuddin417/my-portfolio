@@ -2,6 +2,10 @@ import photo1 from "../image/photo2.png";
 const About = () => {
   return (
     <div
+   data-aos="fade-right"
+   data-aos-offset="300"
+   data-aos-easing="linear"
+   data-aos-duration="1200"
       id="about"
       className="bg-white w-full lg:w-[80%] mx-auto lg:p-16 p-5 my-10 rounded-xl "
     >

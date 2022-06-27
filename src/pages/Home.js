@@ -10,16 +10,33 @@ const Home = () => {
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
         <div className="flex flex-col justify-around">
           <div className="space-y-8">
-            <p className="text-gray-500 tracking-[3px] text-xl">
+            <p
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              className="text-gray-500 tracking-[3px] text-xl"
+            >
               welcome to my world
             </p>
-            <p>
+            <p
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+            >
               <span className="text-6xl font-bold">
                 Hi, I'm <span className="text-primary">Riaz Uddin </span>
               </span>{" "}
               <br />
             </p>
-            <p className="text-5xl font-semibold ">
+            <p
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="text-5xl font-semibold "
+            >
               <span className="text-primary">a</span> Professional Developer
             </p>
             <p className="text-gray-500 text-md">
@@ -49,17 +66,23 @@ const Home = () => {
               <div className="space-x-6 flex">
                 <a
                   target="_blank"
-                  href="https://web.facebook.com/md.riaj.9085790" rel="noreferrer"
+                  href="https://web.facebook.com/md.riaj.9085790"
+                  rel="noreferrer"
                 >
                   <FiFacebook className="icon" />
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/riaz-uddin-457421214/" rel="noreferrer"
+                  href="https://www.linkedin.com/in/riaz-uddin-457421214/"
+                  rel="noreferrer"
                 >
                   <FiLinkedin className="icon" />
                 </a>
-                <a target="_blank" href="https://github.com/mdriazuddin417" rel="noreferrer">
+                <a
+                  target="_blank"
+                  href="https://github.com/mdriazuddin417"
+                  rel="noreferrer"
+                >
                   <FiGithub className="icon" />
                 </a>
               </div>
@@ -95,7 +118,13 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className=" p-5 flex justify-center items-center ">
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="300"
+            data-aos-easing="linear"
+            data-aos-duration="1200"
+            className=" p-5 flex justify-center items-center "
+          >
             <img
               src={img}
               alt=""

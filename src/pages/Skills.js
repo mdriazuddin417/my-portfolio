@@ -1,4 +1,3 @@
-
 const Skills = () => {
   return (
     <div id="skills">
@@ -13,8 +12,11 @@ const Skills = () => {
         </p>
       </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 lg:w-[90%] lg:p-10 bg-white rounded-xl mx-auto">
-      
-        <div className="p-10">
+        <div
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+         className="p-10">
           <h3 className="text-primary font-bold text-3xl">
             <input
               type="radio"
@@ -22,7 +24,7 @@ const Skills = () => {
               className="radio radio-primary mr-2"
               checked
             />
-            Comfortable 
+            Comfortable
           </h3>
 
           <div className="mt-5 space-y-4">
@@ -114,23 +116,23 @@ const Skills = () => {
                 max="100"
               ></progress>
             </div>
-            
-            
           </div>
         </div>
-        <div className="p-10">
+        <div
+        data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="1200"
+        className="p-10">
           <h3 className="text-primary font-bold text-3xl">
             <input
               type="radio"
               name="radio-4"
               className="radio radio-primary mr-2"
-              
             />
             Basic Skills
           </h3>
 
           <div className="mt-5 space-y-4">
-            
             <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Mongo DB</h3>
@@ -144,9 +146,7 @@ const Skills = () => {
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
-                <h3 className="font-semibold">
-                  Node js(Crud Operation) 
-                </h3>
+                <h3 className="font-semibold">Node js(Crud Operation)</h3>
                 <span className="text-secondary">80%</span>
               </div>
               <progress
@@ -157,9 +157,7 @@ const Skills = () => {
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
-                <h3 className="font-semibold">
-                Express js (JWT Token)
-                </h3>
+                <h3 className="font-semibold">Express js (JWT Token)</h3>
                 <span className="text-secondary">80%</span>
               </div>
               <progress

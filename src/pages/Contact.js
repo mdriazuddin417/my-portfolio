@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
 import emailjs from "emailjs-com";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import { FiFacebook, FiLinkedin, FiGithub } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
+import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
 import { toast } from "react-toastify";
 const Contact = () => {
   const sendEmail = (e) => {
@@ -31,7 +30,11 @@ const Contact = () => {
         Contact With Me
       </p>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 p-5 mt-5">
-        <div className="my-shadow-icon bg-white p-10 rounded-2xl space-y-3">
+        <div
+         data-aos="zoom-in-up"
+         data-aos-easing="linear"
+         data-aos-duration="1300"
+         className="my-shadow-icon bg-white p-10 rounded-2xl space-y-3">
           <Player
             autoplay
             loop
@@ -57,23 +60,27 @@ const Contact = () => {
             <div className="space-x-6 flex">
               <a
                 target="_blank"
-                href="https://web.facebook.com/md.riaj.9085790"
+                href="https://web.facebook.com/md.riaj.9085790" rel="noreferrer"
               >
                 <FiFacebook className="icon" />
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/riaz-uddin-457421214/"
+                href="https://www.linkedin.com/in/riaz-uddin-457421214/" rel="noreferrer"
               >
                 <FiLinkedin className="icon" />
               </a>
-              <a target="_blank" href="https://github.com/mdriazuddin417">
+              <a target="_blank" href="https://github.com/mdriazuddin417" rel="noreferrer">
                 <FiGithub className="icon" />
               </a>
             </div>
           </div>
         </div>
-        <div className="my-shadow-icon p-10 rounded-2xl ">
+        <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+         className="my-shadow-icon p-10 rounded-2xl ">
           <form onSubmit={sendEmail} className="space-y-12">
             <div className="flex justify-between items-center gap-10">
               <div>

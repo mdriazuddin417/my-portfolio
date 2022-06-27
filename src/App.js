@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import About from "./pages/About";
@@ -10,6 +12,7 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Skills from "./pages/Skills";
 function App() {
+  AOS.init();
   return (
     <div className="max-w-7xl mx-auto ">
       <Header />
