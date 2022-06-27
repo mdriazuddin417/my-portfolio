@@ -3,7 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 const Blog = ({ blog, handleModel }) => {
   const { name, category, text, picture } = blog;
   return (
-    <label for="my-modal-4">
+    <label htmlFor="my-modal-4">
       <div className="space-y-5 p-10 rounded-2xl my-shadow-icon cursor-pointer blog-card ">
         <div className="h-[300px] w-full ">
           <img src={picture} alt="" className="h-full w-full rounded " />

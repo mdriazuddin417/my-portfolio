@@ -4,12 +4,12 @@ const BlogModel = ({ blog }) => {
   const { picture, name, text, category } = blog;
   return (
     <div>
-      <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-      <div class="modal">
-        <div class=" relative bg-white my-shadow-icon m-10 p-10 rounded-xl ">
+      <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+      <div className="modal">
+        <div className=" relative bg-white my-shadow-icon m-10 p-10 rounded-xl ">
           <label
-            for="my-modal-4"
-            class="btn btn-secondary btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="my-modal-4"
+            className="btn btn-secondary btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>

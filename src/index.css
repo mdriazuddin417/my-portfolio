@@ -19,10 +19,9 @@ body {
 .my-card:hover h2,
 .my-card:hover .icons {
   color: white;
+  opacity: 1;
 }
-.my-card:hover .icons {
-  display: block;
-}
+
 .my-card:hover .card-info {
   transform: translateY(-15px);
 }
@@ -66,7 +65,6 @@ body {
 /* ==============Details btn====================== */
 
 .exampleBtn {
-  padding: 12px 24px;
   background-color: hsl(222, 100%, 95%);
   color: #ff451b;
   position: relative;
@@ -120,4 +118,27 @@ body {
 .blog-card:hover .blog-icon {
   opacity: 1;
   transform: translateX(10px);
+}
+/* ==============swiper js */
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: tomato;
+  color: white !important;
+  padding: 15px !important;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: tomato !important;
+  width: 15px !important;
+
+  border-radius: 10px !important;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 15px !important;
 }

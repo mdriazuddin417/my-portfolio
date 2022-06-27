@@ -1,8 +1,8 @@
-import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 const Project = ({ project, handleModel }) => {
+
   return (
-    <div className="space-y-5 p-10 rounded-2xl my-shadow-icon cursor-pointer">
+    <div className="space-y-5  rounded-2xl my-shadow-icon ">
       <div className="overflow-hidden h-[300px] rounded-lg w-full ">
         <img
           src={project?.picture[0]}
@@ -11,21 +11,23 @@ const Project = ({ project, handleModel }) => {
         />
       </div>
 
-      <h3 className="text-2xl font-bold hover:text-primary ">{project.name}</h3>
+      <div className="px-5 pb-5 m-0">
+      <h3 className="text-2xl font-bold duration-300 hover:text-primary pb-2">{project.name}</h3>
 
-      <div className="flex justify-between items-center gap-5">
-        <label for="my-modal-3">
-          <div className="p-2 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
-            <span className="flex" onClick={() => handleModel(project)}>
-              Details <BsArrowRight className="text-xl ml-2" />
-            </span>
-          </div>
-        </label>
-        <a target={"_blank"} href={`${project.livesite}`}>
-          <div className="p-2 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
-            <span>Livesite</span>
-          </div>
-        </a>
+<div className="flex justify-between items-center gap-5">
+  <label htmlFor="my-modal-3">
+    <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-1 rounded-md my-shadow-icon exampleBtn  text-center font-bold cursor-pointer">
+      <span className="flex" onClick={() => handleModel(project)}>
+        Details <BsArrowRight className="text-xl ml-2" />
+      </span>
+    </div>
+  </label>
+  <a target={"_blank"} href={`${project?.livesite}`} rel="noreferrer">
+    <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-1 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
+      <span>Live</span>
+    </div>
+  </a>
+</div>
       </div>
     </div>
   );
