@@ -49,7 +49,7 @@ const Home = () => {
                 <button className="btn btn-secondary">Hire me</button>
               </a>
               <a
-                href="https://drive.google.com/drive/folders/1l6DgQDa1CLclTzVQM8gPpq0CEQ6zRXnc"
+                href="https://drive.google.com/file/d/1rN_YpzZx1XD_zcVk5VLfs7MbkBC-dl16/view?usp=sharing"
                 download="true"
               >
                 <button className="btn btn-outline btn-secondary">

@@ -2,10 +2,10 @@ import photo1 from "../image/photo2.png";
 const About = () => {
   return (
     <div
-   data-aos="fade-right"
-   data-aos-offset="300"
-   data-aos-easing="linear"
-   data-aos-duration="1200"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="linear"
+      data-aos-duration="1200"
       id="about"
       className="bg-white w-full lg:w-[80%] mx-auto lg:p-16 p-5 my-10 rounded-xl "
     >
@@ -73,7 +73,7 @@ const About = () => {
             necessary to make your project a success.
           </p>
           <a
-            href="https://drive.google.com/drive/folders/1l6DgQDa1CLclTzVQM8gPpq0CEQ6zRXnc"
+            href="https://drive.google.com/file/d/1rN_YpzZx1XD_zcVk5VLfs7MbkBC-dl16/view?usp=sharing"
             download="true"
           >
             <button className="btn btn-secondary mt-5">Download Resume</button>

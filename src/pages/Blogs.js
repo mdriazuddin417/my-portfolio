@@ -13,9 +13,9 @@ const Blogs = () => {
   }, []);
 
   const handleModel = (blog) => {
-    if (blog) {
+  
       setItems(blog);
-    }
+    
   };
   return (
     <div id="blog" className="my-10">
@@ -33,7 +33,7 @@ const Blogs = () => {
           <Blog key={blog.id} blog={blog} handleModel={handleModel}></Blog>
         ))}
       </div>
-      <BlogModel blog={items} />
+      {items && <BlogModel blog={items} />}
     </div>
   );
 };
