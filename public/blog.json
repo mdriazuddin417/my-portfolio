@@ -1,20 +1,20 @@
 [
   {
-    "id": 1,
+    "_id": 1,
     "category": "App development",
     "picture": "https://i.ibb.co/fFWgpHN/pxfuel-com-1.jpg",
     "name": "The services provide for design",
     "text": "Web developers around the world share the desire to write, debug, and ship code day in and day out. It’s not an easy job since most of the time you’re constantly learning on the fly. But with great study and work habits, becoming an experienced web developer is attainable (especially if you’re considering a Thinkful Engineering Immersion or Engineering Flex course.There are several developers out there who like to share their experience with others. It’s tough to glean insights from every top techie that may have a blog, but there are definitely some top web developer blogs and publications worth the read. Here are some of the top ones you should check out if you’re an aspiring or current web developer."
   },
   {
-    "id": 2,
+    "_id": 2,
     "category": "web development",
     "picture": "https://i.ibb.co/Ykk32Sp/pxfuel-com-2.jpg",
     "name": "The services provide for design",
     "text": "Thinkful’s Blog - Software Engineering: If you’re just starting out in the web development world, our blog is a great place to start looking for more information. You’ll get a chance to learn why coding is so damn hard and you’ll be able to meet Thinkful grads who overcame tough coding challenges and became software engineers. Meet skilled mentors and get some advice on how you can launch your coding career in the world’s next workforce.The Next Web: The Next Web is an online publisher that shares all types of tech news that web devs love. Do you know the latest product rollouts on Instagram or about Google’s new braille keyboard for Android? You can learn about the latest updates at various tech companies and get insights into all things web development and technology. Read about tech trends and the impact software engineering has on our society today."
   },
   {
-    "id": 3,
+    "_id": 3,
     "category": "web Design",
     "picture": "https://i.ibb.co/P99cVCm/pxfuel-com.jpg",
     "name": "A BRIEF HISTORY OF RESPONSIVE WEB DESIGN",

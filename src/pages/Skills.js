@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="p-5">
       <div className="text-center pb-5 mb-10">
         <p className="text-md text-secondary tracking-[2px]">skills</p>
         <p className="text-center text-3xl text-black font-bold">
@@ -13,10 +13,11 @@ const Skills = () => {
       </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 lg:w-[90%] lg:p-10 bg-white rounded-xl mx-auto">
         <div
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-         className="p-10">
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          className="p-10"
+        >
           <h3 className="text-primary font-bold text-3xl">
             <input
               type="radio"
@@ -119,10 +120,11 @@ const Skills = () => {
           </div>
         </div>
         <div
-        data-aos="fade-left"
-        data-aos-easing="linear"
-        data-aos-duration="1200"
-        className="p-10">
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          className="p-10"
+        >
           <h3 className="text-primary font-bold text-3xl">
             <input
               type="radio"

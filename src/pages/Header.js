@@ -1,20 +1,10 @@
 import photo from "../image/photo3.png";
+import { Link } from "react-router-dom";
 const Header = () => {
-  window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 100) {
-      document
-        .getElementById("navbar")
-        .classList.add("fixed" ,"shadow", "bg-opacity-90");
-    } else {
-      document
-        .getElementById("navbar")
-        .classList.remove("fixed","shadow", "bg-opacity-90");
-    }
-  });
   const menu = (
     <>
       <li>
-        <a href="#home">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <a href="#about">About</a>
@@ -23,10 +13,10 @@ const Header = () => {
         <a href="#skills">Skills</a>
       </li>
       <li>
-        <a href="#services">Services</a>
+        <Link to="/services">Services</Link>
       </li>
       <li>
-        <a href="#blog">Blog</a>
+        <Link to="/blogs">Blog</Link>
       </li>
       <li>
         <a href="#contact">Contact</a>
@@ -34,7 +24,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-accent top-0 z-50" id="navbar">
+    <div className="navbar bg-accent sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -61,7 +51,11 @@ const Header = () => {
           </ul>
         </div>
         <div className=" normal-case text-xl">
-          <img src={photo} alt="" className="rounded-full w-[65px] h-[65px] ring-2 ring-[#FF451B] ring-offset-2" />
+          <img
+            src={photo}
+            alt=""
+            className="rounded-full w-[65px] h-[65px] ring-2 ring-[#FF451B] ring-offset-2"
+          />
         </div>
       </div>
       <div className="navbar-end hidden lg:flex">

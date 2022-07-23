@@ -1,30 +1,28 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import About from "./pages/About";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
-import Footer from "./pages/Footer";
 import Header from "./pages/Header";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import HomePage from "./pages/HomePage";
+import Blogs from "./pages/Blogs";
 import Services from "./pages/Services";
-import Skills from "./pages/Skills";
+import BlogDetails from "./pages/BlogDetails";
+import ProjectDetails from "./pages/ProjectDetails";
+
 function App() {
   AOS.init();
   return (
     <div className="max-w-7xl mx-auto ">
       <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Services />
-    
-      <Projects />
-      <Blogs />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+      </Routes>
+
       <ToastContainer />
     </div>
   );

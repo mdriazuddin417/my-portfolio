@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
 const Blog = ({ blog, handleModel }) => {
-  const { name, category, text, picture } = blog;
+  const { name, category, text, picture, _id } = blog;
+
   return (
-    <label htmlFor="my-modal-4">
+    <Link to={`/blog/${_id}`}>
       <div className="space-y-5 p-10 rounded-2xl my-shadow-icon cursor-pointer blog-card ">
         <div className="h-[300px] w-full ">
           <img src={picture} alt="" className="h-full w-full rounded " />
@@ -20,7 +22,7 @@ const Blog = ({ blog, handleModel }) => {
           </span>
         </div>
       </div>
-    </label>
+    </Link>
   );
 };
 
