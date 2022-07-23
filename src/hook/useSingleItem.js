@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
 
 const useSingleItem = (value, id) => {
+  const [loading, setLoading] = useState(false);
   const [item, setItem] = useState({});
-  const url = `http://localhost:5000/${value}/${id}`;
+  const url = `https://portfolio1212.herokuapp.com/${value}/${id}`;
   useEffect(() => {
+    setLoading(true);
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setItem(data));
+      .then((data) => {
+        setLoading(false);
+        setItem(data);
+      });
   }, [url]);
 
-  return [item, setItem];
+  return [item, loading];
 };
 
 export default useSingleItem;

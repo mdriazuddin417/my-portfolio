@@ -2,16 +2,24 @@ import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import useSingleItem from "../hook/useSingleItem";
+import Loading from "./Loading";
 
 const ProjectDetails = () => {
   const { id } = useParams();
-  const [project, setItem] = useSingleItem("project", id);
+  const [project, loading] = useSingleItem("project", id);
   const [newPic, setNewPic] = useState("");
   const { tools, name, picture, text } = project;
+  console.log(project);
+  if (loading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
+  }
   return (
     <div className="h-[86vh]">
       <div className=" bg-white my-shadow-icon m-10 p-10 rounded-xl ">
-        <h3>My name is Riaz</h3>
         <div className="grid lg:grid-cols-2 gap-10 ">
           <div className="space-y-5 ">
             <div>

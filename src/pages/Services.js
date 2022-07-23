@@ -7,12 +7,12 @@ import {
 import { SiJavascript } from "react-icons/si";
 const Services = () => {
   return (
-    <div id="services" className=" h-[calc(100vh-81px)]">
+    <div id="services" className=" h-[calc(100vh-81px)] lg:pb-10 lg:pt-5">
       <p className="text-center text-secondary font-bold">Service</p>
       <p className="text-center text-3xl text-black font-bold">
         <span className="text-primary">MY </span>SERVICES
       </p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 p-8">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 px-12 py-5">
         <div
           data-aos="fade-right"
           data-aos-easing="linear"
@@ -24,8 +24,9 @@ const Services = () => {
 
             <h2 className="text-3xl font-[500] ">Javascript Development</h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              A JavaScript Developer is a Software Developer who specialises in
+              the design, testing and implementation of software using the
+              JavaScript programming language.
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />
@@ -45,8 +46,10 @@ const Services = () => {
               React application Development
             </h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              React is a JavaScript-based UI development library. Facebook and
+              an open-source developer community run it. Although React is a
+              library rather than a language, it is widely used in web
+              development.
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />
@@ -64,8 +67,9 @@ const Services = () => {
 
             <h2 className="text-3xl font-[500] ">Front-end Development</h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              Front end development is a style of computer programming that
+              focuses on the coding and creation of elements and features of a
+              website that will then be seen by the user.
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />
@@ -81,10 +85,12 @@ const Services = () => {
           <div className="p-10 space-y-5 card-info duration-700">
             <HiOutlinePencil className="text-6xl text-primary icons " />
 
-            <h2 className="text-3xl font-[500] ">Web Design</h2>
+            <h2 className="text-3xl font-[500] ">Any file to HTML</h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              Now right-click on the page and select View Page Source. You can
+              also view the page source through the browser menu. In Internet
+              Explorer, it is accessed through the View menu and then select
+              Source.
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />
@@ -102,8 +108,9 @@ const Services = () => {
 
             <h2 className="text-3xl font-[500] ">Web Development</h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              Web developers are responsible for designing and developing
+              websites and website applications. Using a variety of programming
+              languages and web technologies, web developers
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />
@@ -119,10 +126,11 @@ const Services = () => {
           <div className="p-10 space-y-5 card-info duration-700">
             <FaAndroid className="text-6xl text-primary icons " />
 
-            <h2 className="text-3xl font-[500] ">App Development</h2>
+            <h2 className="text-3xl font-[500] ">React Native</h2>
             <p className="text-md text-gray-500 ">
-              I throw myself down among the tall grass by the stream as I lie
-              close to the earth
+              React Native is an open-source JavaScript framework, designed for
+              building apps on multiple platforms like iOS, Android, and also
+              web applications, utilizing the very same code base.
             </p>
             <p>
               <FaArrowRight className="text-xl text-primary icons opacity-0" />

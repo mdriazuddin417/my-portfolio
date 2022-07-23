@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ecf0f3;
@@ -110,6 +109,7 @@ body {
 }
 
 /* ===========Blog============ */
+
 .blog-card:hover {
   color: #ff451b;
 }
@@ -121,26 +121,14 @@ body {
   opacity: 1;
   transform: translateX(10px);
 }
-/* ==============swiper js */
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: tomato;
-  color: white !important;
-  padding: 15px !important;
+
+
+::-webkit-scrollbar{
+  background: white;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: #ff451b;
   border-radius: 5px;
-  transition: 0.3s;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: tomato !important;
-  width: 15px !important;
-
-  border-radius: 10px !important;
-}
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after,
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-  font-size: 15px !important;
 }

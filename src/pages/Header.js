@@ -1,30 +1,28 @@
 import photo from "../image/photo3.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   const menu = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
+      </li>
+
+      <li>
+        <NavLink to="/project">All Project</NavLink>
       </li>
       <li>
-        <a href="#about">About</a>
+        <NavLink to="/services">Services</NavLink>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <NavLink to="/blogs">Blogs</NavLink>
       </li>
       <li>
-        <Link to="/services">Services</Link>
-      </li>
-      <li>
-        <Link to="/blogs">Blog</Link>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-accent sticky top-0 z-50">
+    <div className="navbar bg-accent sticky top-0 z-50 shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -50,13 +48,20 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <div className=" normal-case text-xl">
+        <div className=" normal-case text-xl hidden lg:block">
           <img
             src={photo}
             alt=""
             className="rounded-full w-[65px] h-[65px] ring-2 ring-[#FF451B] ring-offset-2"
           />
         </div>
+      </div>
+      <div className="navbar-end  lg:flex lg:hidden">
+        <img
+          src={photo}
+          alt=""
+          className="rounded-full w-[65px] h-[65px] ring-2 ring-[#FF451B] ring-offset-2"
+        />
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 space-x-2">{menu}</ul>

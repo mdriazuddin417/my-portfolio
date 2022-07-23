@@ -23,14 +23,14 @@ const Project = ({ project, handleModel }) => {
 
         <div className="flex justify-between items-center gap-5">
           <Link to={`/project/${project._id}`}>
-            <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-1 rounded-md my-shadow-icon exampleBtn  text-center font-bold cursor-pointer">
+            <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-3 rounded-md my-shadow-icon exampleBtn  text-center font-bold cursor-pointer">
               <span className="flex">
                 Details <BsArrowRight className="text-xl ml-2" />
               </span>
             </div>
           </Link>
           <a target={"_blank"} href={`${project?.livesite}`} rel="noreferrer">
-            <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-1 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
+            <div className="lg:px-[24px] lg:py-[12px] md:px-[24px] md:py-[12px] sm:px-[24px] sm:py-[12px] p-3 rounded-md my-shadow-icon exampleBtn  text-center font-bold">
               <span>Live</span>
             </div>
           </a>

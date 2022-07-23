@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
-const Blog = ({ blog, handleModel }) => {
+const Blog = ({ blog }) => {
   const { name, category, text, picture, _id } = blog;
 
   return (
@@ -12,7 +12,7 @@ const Blog = ({ blog, handleModel }) => {
         </div>
 
         <div className="flex justify-between items-center gap-5">
-          <span className=" " onClick={() => handleModel(blog)}>
+          <span className=" ">
             <span className="text-xl font-bold blog-title ">
               {name}
               <span className=" ">

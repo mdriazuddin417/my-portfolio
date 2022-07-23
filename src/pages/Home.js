@@ -37,12 +37,13 @@ const Home = () => {
               data-aos-duration="1500"
               className="text-5xl font-semibold "
             >
-              <span className="text-primary">a</span> Professional Developer
+              <span className="text-primary">a</span> Professional Web Developer
             </p>
             <p className="text-gray-500 text-md">
-              I use animation as a third dimension by which to simplify
-              experiences and kuiding thro each and every interaction. I’m not
-              adding motion just to spruce things up, but doing it in ways that.
+              My name is Riaz. I am a MERN stack developer. Over the last couple
+              of years, I have been helping Website development and growth teams
+              by collecting and providing new unique UI/UX design and
+              problem-solving.
             </p>
             <div className="flex  justify-start items-center gap-5">
               <a href="#contact">
@@ -58,7 +59,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="grid lg:grid-cols-2 md:lg-grid-cols-2 grid-cols-1 gap-10 ">
+          <div className="grid lg:grid-cols-2 md:lg-grid-cols-2 grid-cols-1 gap-10 pt-3">
             <div>
               <p className="text-md uppercase tracking-[1px] text-gray-700 mb-5">
                 find with me

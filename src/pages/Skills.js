@@ -159,7 +159,9 @@ const Skills = () => {
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
-                <h3 className="font-semibold">Express js (JWT Token)</h3>
+                <h3 className="font-semibold">
+                  Express js (Express Router, JWT)
+                </h3>
                 <span className="text-secondary">40%</span>
               </div>
               <progress
@@ -179,29 +181,29 @@ const Skills = () => {
                 max="100"
               ></progress>
             </div>
-            {/* <div>
+            <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">Mongoose</h3>
-                <span className="text-secondary">85%</span>
+                <span className="text-secondary">60%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="85"
+                value="60"
                 max="100"
               ></progress>
             </div>
             <div>
               <div className="flex justify-between items-center  text-black">
-                <h3 className="font-semibold">React Redux</h3>
-                <span className="text-secondary">85%</span>
+                <h3 className="font-semibold">React Redux (Redux Toolkit)</h3>
+                <span className="text-secondary">50%</span>
               </div>
               <progress
                 className="progress progress-secondary w-full"
-                value="85"
+                value="50"
                 max="100"
               ></progress>
             </div>
-            <div>
+            {/* <div>
               <div className="flex justify-between items-center  text-black">
                 <h3 className="font-semibold">GraphQl</h3>
                 <span className="text-secondary">85%</span>

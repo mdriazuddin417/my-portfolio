@@ -7,7 +7,7 @@ const About = () => {
       data-aos-easing="linear"
       data-aos-duration="1200"
       id="about"
-      className="bg-white w-full lg:w-[80%] mx-auto lg:p-16 p-5 my-10 rounded-xl "
+      className="bg-white w-[90%] lg:w-[80%] mx-auto lg:p-16 p-5 my-10 rounded-xl "
     >
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
         <div className="lg:order-1 order-2">

@@ -12,7 +12,7 @@ const Contact = () => {
         "service_x8f4ydd",
         "template_dksdug6",
         e.target,
-        "nU6G5Ts_IqQb3CYjF"
+        "nU6G5Ts_IqQb3CYjF",
       )
       .then((res) => {
         e.target.reset();
@@ -22,7 +22,7 @@ const Contact = () => {
       .catch((err) => console.log(err));
   };
   return (
-    <div id="contact" className="my-10">
+    <div id="contact" className="py-5">
       <p className="text-primary text-md text-center uppercase tracking-[2px]">
         contact
       </p>
@@ -31,10 +31,11 @@ const Contact = () => {
       </p>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 p-5 mt-5">
         <div
-         data-aos="zoom-in-up"
-         data-aos-easing="linear"
-         data-aos-duration="1300"
-         className="my-shadow-icon bg-white p-10 rounded-2xl space-y-3">
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="1300"
+          className="my-shadow-icon bg-white p-10 rounded-2xl space-y-3"
+        >
           <Player
             autoplay
             loop
@@ -60,27 +61,34 @@ const Contact = () => {
             <div className="space-x-6 flex">
               <a
                 target="_blank"
-                href="https://web.facebook.com/md.riaj.9085790" rel="noreferrer"
+                href="https://web.facebook.com/md.riaj.9085790"
+                rel="noreferrer"
               >
                 <FiFacebook className="icon" />
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/riaz-uddin-457421214/" rel="noreferrer"
+                href="https://www.linkedin.com/in/riaz-uddin-457421214/"
+                rel="noreferrer"
               >
                 <FiLinkedin className="icon" />
               </a>
-              <a target="_blank" href="https://github.com/mdriazuddin417" rel="noreferrer">
+              <a
+                target="_blank"
+                href="https://github.com/mdriazuddin417"
+                rel="noreferrer"
+              >
                 <FiGithub className="icon" />
               </a>
             </div>
           </div>
         </div>
         <div
-        data-aos="zoom-in-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-         className="my-shadow-icon p-10 rounded-2xl ">
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="my-shadow-icon p-10 rounded-2xl "
+        >
           <form onSubmit={sendEmail} className="space-y-12">
             <div className="flex justify-between items-center gap-10">
               <div>

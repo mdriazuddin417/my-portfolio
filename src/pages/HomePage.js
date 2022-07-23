@@ -13,7 +13,9 @@ const HomePage = () => {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <div className="py-5">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
